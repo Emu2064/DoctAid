@@ -4,12 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Navigation from "./components/navbar";
+import Innovative from "./components/innovative";
+import { Stack } from "react-bootstrap";
+import Specialists from "./components/specialists";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Navigation />
+    <Stack gap={3}>
+      <Navigation />
+      <Innovative />
+      <Specialists />
+    </Stack>
   </React.StrictMode>
 );
 
